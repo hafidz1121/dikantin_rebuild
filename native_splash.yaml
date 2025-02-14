@@ -1,9 +1,11 @@
 flutter_native_splash:
   color: "#ffffff"
-  image: assets/logo_dikantin.png
-  branding: assets/jti_nova.png
+  color_dark: "#ffffff"
+  image: assets/images/logo_dikantin.png
+  branding: assets/images/jti_nova.png
 
   android_12: 
     color: "#ffffff"
-    image: assets/logo_dikantin.png
-    branding: assets/jti_nova.png
+    color_dark: "#ffffff"
+    image: assets/images/logo_dikantin.png
+    branding: assets/images/jti_nova.png

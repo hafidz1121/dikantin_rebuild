@@ -1,3 +1,4 @@
+import 'package:dikantin_app_rebuild/app/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -10,13 +11,23 @@ void main() {
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   runApp(
-    GetMaterialApp(
-      title: "Application",
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
-      debugShowCheckedModeBanner: false,
-    ),
+    const MyApp(),
   );
 
   FlutterNativeSplash.remove();
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      title: "Application",
+      initialRoute: AppPages.INITIAL,
+      theme: lightMode,
+      getPages: AppPages.routes,
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }
