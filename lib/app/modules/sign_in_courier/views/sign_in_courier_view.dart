@@ -1,4 +1,4 @@
-// ignore_for_file: must_be_immutable
+// ignore_for_file: must_be_immutable, deprecated_member_use
 
 import 'dart:async';
 
@@ -234,7 +234,7 @@ class SignInCourierView extends GetView<SignInCourierController> {
                   ),
                   const SizedBox(height: 70),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => Get.offAllNamed(Routes.SEND_EMAIL),
                     child: Center(
                       child: const Text(
                         "Lupa password?",

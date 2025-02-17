@@ -50,7 +50,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SEND_EMAIL,
-      page: () => const SendEmailView(),
+      page: () => SendEmailView(),
       binding: SendEmailBinding(),
     ),
     GetPage(

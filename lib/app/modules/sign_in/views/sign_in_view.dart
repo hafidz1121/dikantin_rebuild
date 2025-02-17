@@ -259,7 +259,7 @@ class SignInView extends GetView<SignInController> {
                   ),
                   const SizedBox(height: 70),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => Get.offAllNamed(Routes.SEND_EMAIL),
                     child: Center(
                       child: const Text(
                         "Lupa password?",
