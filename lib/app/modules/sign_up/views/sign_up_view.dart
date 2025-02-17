@@ -99,7 +99,7 @@ class SignUpView extends GetView<SignUpController> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 25),
+                  const SizedBox(height: 20),
                   FormBuilder(
                     key: _formKey,
                     child: Column(

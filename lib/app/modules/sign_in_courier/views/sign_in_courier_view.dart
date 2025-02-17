@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, must_be_immutable
+// ignore_for_file: must_be_immutable
 
 import 'dart:async';
 
@@ -10,10 +10,10 @@ import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:get/get.dart';
 
 import '../../../routes/app_pages.dart';
-import '../controllers/sign_in_controller.dart';
+import '../controllers/sign_in_courier_controller.dart';
 
-class SignInView extends GetView<SignInController> {
-  SignInView({super.key});
+class SignInCourierView extends GetView<SignInCourierController> {
+  SignInCourierView({super.key});
 
   final _formKey = GlobalKey<FormBuilderState>();
   final _obscureText = true.obs;
@@ -82,7 +82,7 @@ class SignInView extends GetView<SignInController> {
                   ),
                   Center(
                     child: const Text(
-                      'Selamat Datang',
+                      'Selamat Datang Kurir',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -229,31 +229,6 @@ class SignInView extends GetView<SignInController> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 10),
-                        SizedBox(
-                          width: double.infinity,
-                          height: 45,
-                          child: ElevatedButton(
-                            onPressed: () => Get.offAllNamed(Routes.SIGN_UP),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                                side: const BorderSide(
-                                  color: Color(0xFF1E2857),
-                                ),
-                              ),
-                            ),
-                            child: Text(
-                              "Daftar",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xFF1E2857),
-                              ),
-                            ),
-                          ),
-                        ),
                       ],
                     ),
                   ),
@@ -273,7 +248,7 @@ class SignInView extends GetView<SignInController> {
                   ),
                   const SizedBox(height: 10),
                   GestureDetector(
-                    onTap: () => Get.offAllNamed(Routes.SIGN_IN_COURIER),
+                    onTap: () => Get.offAllNamed(Routes.SIGN_IN),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -285,7 +260,7 @@ class SignInView extends GetView<SignInController> {
                           ),
                         ),
                         const Text(
-                          "Kurir",
+                          "Pelanggan",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
