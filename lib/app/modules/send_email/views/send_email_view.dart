@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, must_be_immutable
 
 import 'dart:async';
 
@@ -16,7 +16,6 @@ class SendEmailView extends GetView<SendEmailController> {
   SendEmailView({super.key});
 
   final _formKey = GlobalKey<FormBuilderState>();
-  final _obscureText = true.obs;
 
   // Variables to track back button
   int _backButtonPressCount = 0;
@@ -155,7 +154,7 @@ class SendEmailView extends GetView<SendEmailController> {
                           width: double.infinity,
                           height: 45,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Get.offAllNamed(Routes.CODE_OTP),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFF1E2857),
                               shape: RoundedRectangleBorder(
