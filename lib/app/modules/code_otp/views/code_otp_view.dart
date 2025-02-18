@@ -98,7 +98,7 @@ class CodeOtpView extends GetView<CodeOtpController> {
                       textAlign: TextAlign.center,
                       textScaleFactor: 0.85,
                       text: TextSpan(
-                        text: "Kami telah mengirimkan kode OTP ke email ",
+                        text: "Kami telah mengirimkan kode OTP ke ",
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.black54,
@@ -169,6 +169,7 @@ class CodeOtpView extends GetView<CodeOtpController> {
                       child: ElevatedButton(
                         onPressed: () {
                           if (_otpCode != '') {
+                            Get.offAllNamed(Routes.RESET_PASSWORD);
                           } else {
                             Get.snackbar(
                               "Informasi",

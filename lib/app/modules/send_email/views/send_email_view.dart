@@ -27,7 +27,6 @@ class SendEmailView extends GetView<SendEmailController> {
     return mediaQuery.viewInsets.bottom > 0;
   }
 
-
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -148,7 +147,7 @@ class SendEmailView extends GetView<SendEmailController> {
                             FormBuilderValidators.required(),
                             FormBuilderValidators.email(),
                           ]),
-                        ),                        
+                        ),
                         const SizedBox(height: 35),
                         SizedBox(
                           width: double.infinity,
@@ -162,7 +161,7 @@ class SendEmailView extends GetView<SendEmailController> {
                               ),
                             ),
                             child: Text(
-                              "Reset Password",
+                              "Kirim OTP",
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
@@ -174,7 +173,7 @@ class SendEmailView extends GetView<SendEmailController> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 70),                  
+                  const SizedBox(height: 70),
                   GestureDetector(
                     onTap: () => Get.offAllNamed(Routes.SIGN_IN),
                     child: Row(
