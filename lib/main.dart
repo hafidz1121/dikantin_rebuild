@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "Application",
+      title: "Dikantin App Rebuild",
       initialRoute: AppPages.INITIAL,
       theme: lightMode,
       getPages: AppPages.routes,
